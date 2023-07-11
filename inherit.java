@@ -4,6 +4,10 @@ public class inherit{
         tuna.eat();
         tuna.breath();
         tuna.sleep();
+        dog dobby=new dog();
+        dobby.eat();
+        dobby.legs=4;
+        System.out.println(dobby.legs);
 
     }
 }
@@ -16,6 +20,12 @@ class animal{
     void breath(){
         System.out.println("Breathing...");
     }
+}
+class mammals extends animal{
+    int legs;
+}
+class dog extends mammals{
+    String breed;
 }
 class fish extends animal{
     int fins;
